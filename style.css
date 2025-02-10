@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: black;
+    height: 30px;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    justify-content: center;
+    background-color: transparent;
+    filter: invert(1);
+    padding-right: 10px;
+    /* transition: background-color 0.3s ease-in-out; */
+    
+}
+.image{
+    width: 20px; /* Adjust size */
+    height: auto;
+    transition: filter 0.3s ease-in-out;
+    margin-right: 10px;
+}
+
+.image:hover {
+    filter: invert(1);
+    background-color: white;
+}
+.searchbox{
+    filter: invert(1);
+}
+.main{
+    margin: auto;
+}
+.heading{
+    padding-top: 50px;
+    text-align: center;
+    
+}
+.heading,h1{
+    font-size: 40px;
+}
+.heading,h6{
+    padding: 20px 0;
+    font-size: 18px;
+}
+.heading span{
+    background-color: black;
+    color: white;
+}
+.image-header{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 1060px;
+    background: url(jane.jpg);
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+.text{
+    margin: 20px;
+}
+.text h4{
+    font-size: 30px;
+    font-weight: light;
+}
+.text h1{
+    font-size: 60px;
+    font-weight: bolder;
+}
+.text button{
+    padding: 10px;
+    font-size: 20px;
+    cursor: grab;
+    background-color: gray;
+    font-weight: light;
+}
+.text button:hover{
+    filter: invert(1);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    text-align: center;
+    height: 200px;
+    width: 700px;
+    align-items: center;
+    color: black;
+    
+}
+.popup h2{
+    font-weight: light;
+    letter-spacing: 3px;
+    color: black;
+    text-align: left;
+    /* margin-bottom:5px ; */
+    padding: 10px 0;
+}
+.popup p{
+    text-align: left;
+    padding: 10px 0;
+    font-size: 17px;
+    font-weight: lighter;
+    
+}
+
+.popup input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.popup .submit-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.submit-btn:hover{
+    background-color: gray;
+    color: black;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: red;
+}
+.grid-container{
+    /* background-color: gray; */
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns:2fr 1fr ;
+    min-height: 700px;
+}
+.leftside{
+    /* background-color: aquamarine; */
+    
+}
+.text1{
+    text-align: center;
+    /* padding: 20px 0; */
+    margin: 20px;
+    
+}
+
+.description-heading p{
+    margin: 10px;
+    font-size:20px;
+}
+.description-heading span{
+    color: gray;
+}
+.paragraph{
+    margin-top: 20px;
+    font-size: 17px;
+    
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.like-button{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
+    background-color: white;
+    /* border: rgb(210, 33, 33) solid 4px ; */
+    gap: 5px;
+    cursor: pointer;
+}
+.like-button img{
+    height: 20px;
+}
+.like-button:hover{
+    background-color: gray;
+}
+.reply-button{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    /* border: rgb(210, 33, 33) solid 4px ; */
+    gap: 5px;
+    cursor: pointer;
+}
+.reply-button span{
+    background-color: white;
+    color: black;
+    padding: 0 5px;
+}
+.reply-button:hover{
+    background-color: gainsboro;
+    color: black;
+}
+.comment-box {
+    display: none; 
+    /* position: fixed; */
+    margin: 30px 0;
+    /* width: 70%; */
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.comment-material{
+    display: flex;
+
+   text-align: center;
+}
+.comment-material span{
+    color: gray;
+    font-weight: lighter;
+    font-size: 17px;
+}
+.comment-material p{
+    margin: auto 50px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.description-heading h2, p{
+    text-align: center;
+    margin: 20px;
+
+}
+.description-paragraph{
+    text-align: left;
+}
+footer{
+    background-color: gray;
+    padding: 30px 20px;
+    height: auto;
+}
+.top-button {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
+    background-color:black;
+    color: white;
+    /* border: rgb(210, 33, 33) solid 4px ; */
+    gap: 5px;
+    cursor: pointer;
+}
+.top-button img{
+    height: 20px;
+    filter: invert(1);
+}
+.top-button:hover{
+    background-color: gray;
+    /* color: black; */
+    filter: invert(1);
+}
+.rightside{
+    /* background-color: #ccc; */
+}
+.right-section1 h2{
+    padding-left: 15px;
+}
+.right-section1 {
+    background-color: black;
+    color: white;
+    padding-bottom: 20px ;
+}
+.right-section1 p{
+    text-align: left;
+}
+.posts{
+    margin: 60px 0;
+}
+.posts h2{
+    background-color: black;
+    color: white;
+    padding: 20px 15px;
+    /* font-size: 20px; */
+}
+.post1{
+    display: flex;
+    text-align: center;
+    /* margin: 0 20px; */
+    padding: 15px ;
+    border-bottom: 1px solid rgba(31, 7, 7, 0.71);
+    /* justify-content: space-evenly; */
+}
+.p-title{
+    display: block;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.post1 p{
+    text-align: left;
+    font-size: 18px;
+}
+.advertise h2{
+    background-color: black;
+    color: white;
+    padding: 20px 15px;
+}
+.advertise p{
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.tags h2{
+    background-color: black;
+    color: white;
+    padding: 20px 15px;
+}
+.tags span{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.tags p{
+    word-spacing: 10px;
+    text-align: left;
+}
+.inspiration{
+    margin: 60px 0;
+}
+.inspiration h2{
+    background-color: black;
+    color: white;
+    padding: 20px 15px;
+}
+.layer{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* padding: 30px 0; */
+    margin: 20px 0;
+}
+.follow{
+    margin: 60px 0;
+}
+.follow h2{
+    background-color: black;
+    color: white;
+    padding: 20px 15px;
+}
+.socials{
+    width: 100%;
+    padding: 10px;
+}
+.socials a:hover{
+    color: white;
+}
+
+.subscription h2{
+    background-color: black;
+    color: white;
+    padding: 20px 15px;
+}
+.subscription p{
+    text-align: left;
+}
+.email-field{
+    text-align: center;
+    margin: 20px;
+}
+.email-field input{
+    padding: 10px 0;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    border: 1px solid black;
+}
+.sub-btn{
+    margin: 20px;
+    /* text-align: center; */
+}
+.sub-btn button{
+    /* margin: 0 20px; */
+    padding: 10px 0;
+    width: 100%;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+.sub-btn button:hover{
+    background-color: gainsboro;
+    color: black;
+}
+.footer-text{
+    font-size: 20px;
+    margin: 20px 0;
+    color: white;
+}
+.footer-text a{
+    text-decoration: underline;
+    color: white;
+}

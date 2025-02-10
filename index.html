@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="icons hover-effect">
+            <a href="#"><img class="image" src="facebook.svg" alt="facebook"></a> 
+            <a href="#"><img class="image" src="instagram.svg" alt="instagram"></a> 
+            <a href="#"><img class="image" src="snapchat.svg" alt="snapchat"></a> 
+            <a href="#"><img class="image" src="pinterest.svg" alt="pinterest"></a> 
+            <a href="#"><img class="image" src="twitter.svg" alt="twitter"></a> 
+            <a href="#"><img class="image" src="linkedin.svg" alt="linkedin"></a> 
+        </div>
+        <div class="searchbox hover-effect">
+            <a href="#"><img class="image" src="search.svg" alt="search"></a>
+        </div>
+    </div>
+    <div class="main">
+        <header class="heading">
+            <h1><b>JANE BLOGLIFE</b></h1>
+            <h6>Welcome to the blog of <span>Jane's world</span></h6>
+        </header>
+        <header class="image-header">
+            <div>
+                <div class="text"> <h4>Jane's</h4></div>
+                <div class="text"> <h1>FASHION BLOG</h1></div>
+                <div class="text"> <button onclick="openPopup()">SUBSCRIBE</button></div>
+
+                <div class="popup" id="popup">
+                    <span class="close-btn" onclick="closePopup()">×</span>
+                    <h2>SUBSCRIBE</h2>
+                    <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <button class="submit-btn" onclick="submitEmail()">Subscribe</button>
+                </div>
+
+            </div>
+        </header>
+    </div>
+    <div class="grid-container">
+        <div class="leftside">
+
+           <div class="description-container">
+            <div class="description-heading">
+                <h2>TITLE HEADING</h2>
+                <p>Title description, <span>May 2, 2016</span></p>
+            </div>
+            <img src="girl_hat.jpg" alt="" width="100%">
+            <p class="description-paragraph">
+                <b>More Hats!</b> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. <br>
+                <br>
+                Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <div class="buttons">
+                <button class="like-button">
+                    <img src="thumb-up.svg" alt="like">
+                    Like
+                </button>
+                <button class="reply-button" onclick="toggleComment1()">Replies <span>1</span></button>
+            </div>
+            <div class="comment-box" id="commentBox1">
+                <div class="comment-material">
+                    <img src="avatar.jpg" alt="reply" height="100px">
+                <p> <b>George </b><span>May 3, 2015, 6:32 PM</span> <br> <br>
+                    Great blog post! Following</p>
+                </div>
+            </div>
+           </div>
+
+            <div class="description-container">
+                <div class="description-heading">
+                    <h2>TITLE HEADING</h2>
+                <p>Title description, <span>April 23 2016</span></p>
+                </div>
+              
+                    <img src="man_hat.jpg" alt="" width="100%">
+                
+                <p class="description-paragraph">
+                    <b>Hats! </b>The trend this summer is hats for men!
+                    <br>
+                    <br>
+                Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                </p>
+                <div class="buttons">
+                    <button class="like-button">
+                        <img src="thumb-up.svg" alt="like">
+                        Like
+                    </button>
+                    <button class="reply-button" onclick="toggleComment2()">Replies <span>2</span></button>
+                </div>
+
+                <div class="comment-box" id="commentBox2">
+                    <div class="comment-material">
+                        <img src="girl_train.jpg" alt="reply" height="100px">
+                    <p> <b>George </b><span>May 3, 2015, 6:32 PM</span> <br> <br>
+                        Great blog post! Following</p>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="comment-material">
+                        <img src="girl.jpg" alt="reply" height="100px">
+                    <p> <b>George </b><span>May 3, 2015, 6:32 PM</span> <br> <br>
+                        Great blog post! Following</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="description-container">
+                <div class="description-heading">
+                    <h2>TITLE HEADING</h2>
+                <p>Title description, <span>April 23 2016</span></p>
+                </div>
+              
+                    <img src="runway.jpg" alt="" width="100%">
+                
+                <p class="description-paragraph">
+                    <b>Dont miss! </b>The runway in New York City this weekend is gonna be legendary!
+                    <br>
+                    <br>
+                Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                </p>
+                <div class="buttons">
+                    <button class="like-button">
+                        <img src="thumb-up.svg" alt="like">
+                        Like
+                    </button>
+                    <button class="reply-button" onclick="toggleComment3()">Replies <span>3</span></button>
+                </div>
+
+                <div class="comment-box" id="commentBox3">
+                    <div class="comment-material">
+                        <img src="girl_mountain.jpg" alt="reply" height="100px">
+                    <p> <b>Jane </b><span>April 10, 2015, 7:22 PM</span> <br> <br>
+                        That was a great runway show! Thanks for everything.</p>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="comment-material">
+                        <img src="boy.jpg" alt="reply" height="100px">
+                    <p> <b>John </b><span>April 8, 2015, 10:32 PM</span> <br> <br>
+                        Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="comment-material">
+                        <img src="girl_hood.jpg" alt="reply" height="100px">
+                    <p> <b>Anja </b><span>April 7, 2015, 9:12 PM</span> <br> <br>
+                        Cant wait for the runway to start!</p>
+                    </div>
+                    <br>
+                    <br>
+                   
+                  
+
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="rightside">
+            <div class="right-section1">
+                <img src="avatar_girl2.jpg" alt="" width="100%">
+               <div>
+                <h2>My Name</h2>
+                <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+               </div>
+            </div>
+            <div class="posts">
+                <h2>Popular Posts</h2>
+                <div class="post1">
+                    <img src="avatar_smoke.jpg" alt="" height="100px">
+                    <p><span class="p-title">Denim</span>Sed mattis nunc</p>
+                </div>
+                <div class="post1">
+                    <img src="bandmember.jpg" alt="" height="100px">
+                    <p><span class="p-title">Sweaters</span>Praes tinci sed</p>
+                </div>
+                <div class="post1">
+                    <img src="workshop.jpg" alt="" height="100px">
+                    <p><span class="p-title">Workshop</span>ultricies congue</p>
+                </div>
+                <div class="post1">
+                    <img src="avatar_smoke.jpg" alt="" height="100px">
+                    <p><span class="p-title">Denim</span>Lorem ispum dispum</p>
+                </div>
+
+            </div>
+            <div class="advertise">
+                <h2>Advertise</h2>
+                <p>Your AD Here</p>
+            </div>
+            <div class="tags">
+                <h2>Tags</h2>
+                <p><span>Fashion</span> New-York London Hats Norway Sweaters <br><br>
+                Ideas Deals Accessories News Clothing Shopping Jeans <br><br>
+                Trends
+                </p>
+            </div>
+            <div class="inspiration">
+                <h2>Inspiration</h2>
+                <div class="layer">
+                    <img src="jeans.jpg" alt="" height="50%" width="45%">
+                    <img src="girl_hat.jpg" alt="" height="50%" width="45%">
+                </div>
+                <div class="layer">
+                    <img src="team1.jpg" alt="" height="50%" width="45%">
+                    <img src="team4.jpg" alt="" height="50%" width="45%">
+                </div>
+            </div>
+
+            <div class="follow">
+                <h2>Follow Me</h2>
+                <div class="socials">
+                    <div class="socials">
+                     <a href="#"><img class="image" src="facebook.svg" alt="facebook"></a> 
+                    <a href="#"><img class="image" src="instagram.svg" alt="instagram"></a> 
+                    <a href="#"><img class="image" src="snapchat.svg" alt="snapchat"></a> 
+                    <a href="#"><img class="image" src="pinterest.svg" alt="pinterest"></a> 
+                    <a href="#"><img class="image" src="twitter.svg" alt="twitter"></a> 
+                    <a href="#"><img class="image" src="linkedin.svg" alt="linkedin"></a> 
+                </div>
+                    </div>
+            </div>
+
+            <div class="subscription">
+                <h2>Subscribe</h2>
+                <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+               <div class="email-field">
+                <input type="email" id="email1" placeholder="Enter your email">
+               </div>
+               <div class="sub-btn">
+                <button onclick="submitEmail()">Subscribe</button>
+               </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <button class="top-button" id="topButton" onclick="scrollToTop()"> <img src="arrow-up-bold.svg" alt="like">
+                To The Top</button>
+        </div>
+        <br>
+        <div class="footer-text">
+           Powered by <a href="https://www.w3schools.com/" target="_blank">w3.css</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
